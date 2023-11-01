@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">your name</label>
+    <input type="text" id="ice"> <br>
+    <label for="">choose your favourite icecream? 
+    <select id="iceCreams" name="iceCreams" >  
+        <!-- onchange="selectElements()" -->
+        <option value="">select one...</option>
+        <option value="vanillaa">vanillaa</option>
+        <option value="strawberry">strawbeey</option>
+        <option value="black chocktae"> black chocktae</option>
+    </select> 
+    </label>
+    <br>
+    <div id="result"></div>
+
+    <script>
+        // const selectElements = () =>{
+        //     const inputchange= document.getElementById('ice').value;
+        //     const iceCreams = document.getElementById('iceCreams').value ;             
+        //     const result=document.getElementById('result');
+
+        //     result.innerHTML =  `${inputchange} selected ${iceCreams}`;
+
+        // }
+
+        const iceCreams = document.getElementById('iceCreams')
+        iceCreams.addEventListener('change',()=>{
+            const inputchange= document.getElementById('ice').value;
+            const iceCreams = document.getElementById('iceCreams').value ;             
+            const result=document.getElementById('result');
+
+            result.innerHTML =  `${inputchange} selected ${iceCreams}`;
+        })
+    </script>
+</body>
+</html> 
+
+<!-- difference between onclick and addEventListener
+onclick overwrite the function whereas addEventListener call both the function -->

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="mymouse" onmousedown="mousedown()" onmouseup="mouseup()">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsum, optio aliquid a illo assumenda officia fuga, natus nobis, nulla mollitia. Vero sint aliquid, magni ipsa dignissimos aspernatur suscipit reiciendis! Sint, eligendi. Velit fuga harum saepe, magni accusantium cupiditate facere, tempore odio eveniet laborum, numquam quibusdam eius cumque. Accusantium veniam sapiente perspiciatis inventore. Iste ratione nostrum animi enim ad magnam, voluptatem quos eius necessitatibus cum culpa sed est, officia quis omnis soluta minus fugiat laudantium eaque suscipit voluptate consectetur facere. Impedit in enim voluptas, dicta sequi ea? Voluptatum aspernatur repudiandae harum consequuntur sed esse sint similique laborum, non illum nihil!
+
+    </p>
+    <a id="somemore" href="">check it out</a>
+    <script>
+        function mousedown()
+        {
+            document.getElementById('mymouse').style.color = 'red';      //after touching the text
+        }
+        
+        function mouseup()
+        {
+            document.getElementById('mymouse').style.color = 'green' 
+        }
+        const somemore=document.getElementById('somemore')
+        somemore.addEventListener('mouseenter', () => {
+            alert("hey brother i am bakc");
+        })
+        somemore.addEventListener('mouseleave', () =>{
+            alert("hey sisters i am back");
+        })
+    </script>
+</body>
+</html>

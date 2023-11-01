@@ -1,0 +1,32 @@
+<!-- EVENT BUBBLING -from bottom to top
+EVENT CAPTURING -from top to bottom(parent to child) -->
+<!-- event.stoppropogation --> 
+<!-- x.addEventListener('click',function_name,true)->where true means event capturing -->
+
+
+<!-- HIGH ORDER FUNCTION function-that take function as an argument
+CALLBACK FUNCTION -that pass their function name as an argument  -->
+
+
+<!-- HOW JAVASCRIPT WORKS? AND ASYNCHRONOUS PROGRAMMING
+ hoisting-variable will come first at backend even if we write it at end..
+ lexical scoping/closures-when child element can get acess of parent element variables but vice versa is not true..
+  synchronous js-there is a problem that if first work will not done then the second work will not going to start 
+  asynchronous- we can do many work at a time ,this is called asynchronous js 
+  example setTimeout() is an asynchronous js--->
+
+
+  <!-- THE EVENT LOOP-go to picture for event loop -->
+
+  <!-- FUNCTION CURRYING- 
+    example sum(1)(2)(3)
+        function sum(num1){ 
+            return function(num2){
+                return function(num3)
+                console.log(num1+num2+num3) 
+            }
+        }- -->
+
+
+     <!-- EXECUTION CONTEXT - this is the environment
+     EXECUTION STACK- structure work on last in first out -->

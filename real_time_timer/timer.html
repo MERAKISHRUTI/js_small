@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="number"></p> <br>
+    <button id="btn1" >start</button>
+    <button id="btn2">stop</button>
+
+    <script>
+         let num=0;
+         let timeref;
+        const addi=document.querySelector('#number')
+        const starting = document.querySelector("#btn1")
+        const ending =document.querySelector("#btn2")
+        const countingss =()=>{
+            timeref=setInterval(()=>{
+                addi.innerHTML=`${num} `;
+                 num++;
+        },1000)
+        }
+        starting.addEventListener("click",countingss)
+        ending.addEventListener("click",()=>{
+            clearInterval(timeref)
+        })
+    </script>
+</body>
+</html>
+
+<!-- 1)setTimeout()
+2)setInterval()
+3)clearTimeout()
+4)clearInterval() -->
+
+<!-- array for same data,object store different data like int float  -->  
+<!-- array destructering let [myfname,mylastname,myage]=[shrutu,singhal.20] -->
